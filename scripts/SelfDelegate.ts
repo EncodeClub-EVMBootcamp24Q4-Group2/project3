@@ -18,11 +18,6 @@ async function main() {
 
     // Create wallet client for the token holder
     const account = privateKeyToAccount(`0x${privateKey}`);
-    const walletClient = createWalletClient({
-        account,
-        chain: sepolia,
-        transport: http(process.env.RPC_ENDPOINT_URL)
-    });
     const addressToSelfDelegate = account.address;
 
     // get contract instance
@@ -49,7 +44,6 @@ async function main() {
     if (undelegatedTokens <= 0n) {
         throw new Error("No new tokens to delegate. All tokens are already delegated.");
     }
-
     // self delegate
     const delegateTx = await myTokenContract.write.delegate([addressToSelfDelegate], {
         account,
