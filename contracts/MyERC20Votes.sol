@@ -18,8 +18,6 @@ contract MyToken is ERC20, ERC20Permit, ERC20Votes, AccessControl {
         _mint(to, amount);
     }
 
-    // The following functions are overrides required by Solidity.
-
     function _update(address from, address to, uint256 value)
         internal
         override(ERC20, ERC20Votes)
