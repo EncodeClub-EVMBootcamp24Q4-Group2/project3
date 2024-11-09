@@ -44,6 +44,12 @@ async function main() {
 
     console.log(`From address ${addressToSelfDelegate} has ${formatEther(currentBalance)} MyToken and ${formatEther(votesBeforeSelfDelegate)} votes`);
 
+    // Check for undelegated tokens
+    const undelegatedTokens = currentBalance - votesBeforeSelfDelegate;
+    if (undelegatedTokens <= 0n) {
+        throw new Error("No new tokens to delegate. All tokens are already delegated.");
+    }
+
     // self delegate
     const delegateTx = await myTokenContract.write.delegate([addressToSelfDelegate], {
         account,
