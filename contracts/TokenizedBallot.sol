@@ -23,7 +23,7 @@ contract Ballot {
     ) {
         tokenContract = IMyToken(_tokenContract);
         targetBlockNumber = _targetBlockNumber;
-        // TODO: Validate if targetBlockNumber is in the past
+        require(targetBlockNumber < block.number, "Target block number is in the future");
         for (uint i = 0; i < _proposalNames.length; i++) {
             proposals.push(Proposal({name: _proposalNames[i], voteCount: 0}));
         }
