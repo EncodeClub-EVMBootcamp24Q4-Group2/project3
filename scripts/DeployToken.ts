@@ -1,7 +1,5 @@
 import { abi as _abi, bytecode as _bytecode } from "../artifacts/contracts/MyERC20Votes.sol/MyToken.json";
 import { client, deployerClient } from './config';
-import fs from 'fs';
-import path from 'path';
 
 async function main() {
     let transactionHash: string;
