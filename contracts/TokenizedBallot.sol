@@ -61,7 +61,6 @@ contract Ballot {
         winnerName_ = proposals[winningProposal()].name;
     }
 
-    // Add this new function
     function getAllProposals() external view returns (Proposal[] memory) {
         return proposals;
     }
