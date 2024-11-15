@@ -11,6 +11,8 @@ Write a report with each function execution and the transaction hash, if success
 - Transaction hash: 0xbb61764e9ced8d723ec819d5f5939a0786ea4eb6c46d753a6a554eb0645d5917
 - MyToken address: 0x5064c5eed17f73c3711adef19c87652a2113277f
 ![Deployed Token](img/DeployedToken.png)
+- Etherscan transaction records for deploy, mint and self-delegate voting right
+![Etherscan](img/tokenEtherscan.png)  
 
 ## Deploy ballot
 - Transaction hash: 0x7483c8478de7ada4db14d012ec38a4f0eefe338c73031ffbd5c3c7a90e5db018
