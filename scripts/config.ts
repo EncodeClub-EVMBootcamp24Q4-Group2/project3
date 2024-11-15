@@ -30,7 +30,7 @@ const client = createPublicClient({
     transport: http(`${providerUrl}${providerApiKey}`),
 });
 
-// Define the deployer account
+// Define the deployer and wallet account
 const deployer = privateKeyToAccount(deployerPrivateKey as `0x${string}`);
 const deployerClient = createWalletClient({
     chain: sepolia,

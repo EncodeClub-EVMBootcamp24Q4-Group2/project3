@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
+import "hardhat/console.sol";
 
 interface IMyToken {
     function getPastVotes(address, uint256) external view returns (uint256);
@@ -44,7 +45,18 @@ contract TokenizedBallot {
     function getVotePower(
         address voter
     ) public view returns (uint256 votePower_) {
-        return tokenContract.getPastVotes(voter, targetBlockNumber) - votePowerSpent[voter];
+        // return tokenContract.getPastVotes(voter, targetBlockNumber) - votePowerSpent[voter];
+        uint256 pastVotes = tokenContract.getPastVotes(voter, targetBlockNumber);
+        uint256 spentVotes = votePowerSpent[voter];
+        votePower_ = pastVotes - spentVotes;
+
+        // Debug logs
+        console.log("Voter address:", voter);
+        console.log("Past votes:", pastVotes);
+        console.log("Spent votes:", spentVotes);
+        console.log("Vote power:", votePower_);
+
+    return votePower_;
     }
 
     function winningProposal() public view returns (uint winningProposal_) {
