@@ -7,7 +7,7 @@ Develop and run scripts for “TokenizedBallot.sol” within your group to:
 - querying results
 Write a report with each function execution and the transaction hash, if successful, or the revert reason, if failed
 
-# Team Members & Invividual Project Submission Links
+# Members of Group 2
 
 Encode User IDs and GitHub usernames for group 2 members are below.
 
