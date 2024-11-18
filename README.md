@@ -20,4 +20,4 @@ Links point to each member's repo or branch showing their work on this project.
 *  [lofjwH - Github:](https://github.com/EncodeClub-EVMBootcamp24Q4-Group2/project3/tree/zz/homework) 
 *  Mn8EN0 - Github: @ethalorian 
 *  [HPJ2do - Github: @DiegoB1911](https://github.com/EncodeClub-EVMBootcamp24Q4-Group2/project3/blob/HPJ2do/DiegoB/README.md)
-*  XEGTvv - Github: @margueriteblair
+*  [XEGTvv - Github: @margueriteblair](https://github.com/EncodeClub-EVMBootcamp24Q4-Group2/project3/tree/marguerite-weekend3-hw)
