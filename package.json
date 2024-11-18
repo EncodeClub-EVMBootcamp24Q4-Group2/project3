@@ -1,0 +1,21 @@
+{
+  "name": "p07-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register 'test/**/*.ts'"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@openzeppelin/contracts": "^5.1.0",
+    "hardhat": "^2.22.15",
+    "mocha": "^10.8.2",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
