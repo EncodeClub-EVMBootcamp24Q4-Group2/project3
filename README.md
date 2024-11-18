@@ -20,3 +20,29 @@ Links point to each member's repo or branch showing their work on this project.
 *  [lofjwH - Github:](https://github.com/EncodeClub-EVMBootcamp24Q4-Group2/project3/tree/zz/homework) 
 *  Mn8EN0 - Github: @ethalorian 
 *  HPJ2do - Github: @DiegoB1911 
+
+
+
+## Deploy MyERC20Votes 
+
+![alt text](./img/image-1.png)
+
+## Deploy TokenizedBallot
+![alt text](./img/image-2.png)
+
+## Voting
+![alt text](./img/image-3.png)
+
+## Voting Power
+![alt text](./img/image-4.png)
+
+## QueryResult
+![alt text](./img/image-5.png)
+
+## GiveVotingTokens
+![alt text](./img/image-6.png)
+
+## Delegate Voting
+![alt text](./img/image-7.png)
+
+

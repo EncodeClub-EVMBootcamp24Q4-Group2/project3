@@ -65,6 +65,30 @@ async function main() {
           acc2.account.address
         } has ${votes2AfterTransfer.toString()} units of voting power after receiving a transfer\n`
       );
+
+      const delegateTx2 = await contract.write.delegate([acc2.account.address], {
+        account: acc2.account,
+      });
+      await publicClient.waitForTransactionReceipt({ hash: delegateTx2 });
+      const votesAfter2 = await contract.read.getVotes([acc1.account.address]);
+      console.log(
+        `Account ${
+          acc2.account.address
+        } has ${votesAfter2.toString()} units of voting power after self delegating after reciving tokens\n`
+      );
+
+      const lastBlockNumber = await publicClient.getBlockNumber();
+      for (let index = lastBlockNumber - 1n; index > 0n; index--) {
+        const pastVotes = await contract.read.getPastVotes([
+          acc1.account.address,
+          index,
+        ]);
+        console.log(
+          `Account ${
+            acc1.account.address
+          } had ${pastVotes.toString()} units of voting power at block ${index}\n`
+        );
+      }
 }
 
 
