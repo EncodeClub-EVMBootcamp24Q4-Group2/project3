@@ -6,9 +6,8 @@ Transaction was already deployed with group test env - Referencing the ballot co
 block hash - 0x8d503eb9a4bd4dfcb6067ccda2887b069f456cd51d2303af78c4b02ac7411cff
 
 
-2. Voting for a proposal - Ran into an error where the amount returned from checking the voting power is 0, despite the token balance being valid on the address and the check voting power script returning a non-zero vote power.
+2. Voting for a proposal - Ran into an error where the amount returned from checking the voting power is 0, despite the token balance being valid on the address and the check voting power script returning a non-zero vote power. Will need to debug this in the coming week.
 
+3. Checking Voting Power - script ran as expected. The wallet address has 26 tokens, and the script returned that we have 26 voting power.
 
-3. Checking Voting Power
-
-4. Querying for the winner 
+4. Querying for the winner - Due to the fact that I was unable to successfully vote, couldn't properly query for the winner
